@@ -1416,10 +1416,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
 
         // Hide status bar
         if (!_isVCBasedStatusBarAppearance) {
-            
-            // Non-view controller based
-            [[UIApplication sharedApplication] setStatusBarHidden:hidden withAnimation:animated ? UIStatusBarAnimationSlide : UIStatusBarAnimationNone];
-            
+            // Do nothing.
         } else {
             
             // View controller based so animate away
